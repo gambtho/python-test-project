@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# setup virtual environment
+python3 -m venv ./.app && source ./.app/bin/activate
+
+# run failing test
+python -m unittest
+
+printf "\n\n\n"
+printf "To run tests execute: \npython -m unittest\n\n"
